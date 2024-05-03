@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-size: 7px
+        }
+        .first-btn {
+            background-color: red;
+            color: white;
+            padding: 2px;
+            width: 100px;
+            border: 1px dotted black;
+            border-radius: 10px;
+        }
+
+        .second-btn {
+            color: black;
+            background-color: yellow;
+            border: 1px solid black;
+            border-radius: 3px;
+            font-style: italic;
+        }
+
+        .on-btn {
+            background-color: green;
+            color: white;
+            width: 20px;
+            border: 1px solid white;
+            padding: 3px;
+            border-radius: 30px;
+            font-size: 10px;
+        }
+
+        .off-btn {
+            background-color: red;
+            color: white;
+            border: 1px solid white;
+            width: 20px;
+            padding: 3px;
+            border-radius: 30px;
+            font-size: 10px;
+        }
+
+        .login-btn {
+            background-color: blue;
+            color: white;
+            border: 1px solid white;
+            width: 50px;
+            padding: 2px;
+            border-radius: 3px
+        }
+
+        .btns-container{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+            column-gap: 30px;
+            row-gap: 30px;
+            width: 230px;
+            background-color: rgb(2, 2, 29);
+            padding: 20px
+        }
+
+        .second-btn-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: center;
+            align-items: center;
+            column-gap: 30px;
+            row-gap: 30px;
+            width: 230px;
+            background-color: rgb(2, 2, 29);
+            padding: 20px
+        }
+
+        .btn1:hover {
+            background-color: red;
+            color: white;
+            border: 1px solid white;
+            scale: 30px;
+            border-radius: 7px;
+            padding: 2px;
+            box-shadow: 0px 0px 15px red;
+        }
+
+        .btn2:hover {
+            background-color: green;
+            color: white;
+            border: 1px solid white;
+            scale: 30px;
+            border-radius: 7px;
+            padding: 2px;
+            box-shadow: 3px 3px 1px green;
+        }
+
+        .btn3:hover {
+            background-color: yellow;
+            color: black;
+            border: 1px solid black;
+            scale: 30px;
+            border-radius: 7px;
+            padding: 2px;
+            box-shadow: 5px 5px 1px yellow;
+        }
+
+        .btn4:hover {
+            background-color: blue;
+            color: red;
+            border: 1px solid white;
+            scale: 30px;
+            border-radius: 7px;
+            padding: 2px;
+            box-shadow: -7px 7px 1px blue;
+        }
+        .html-css-js-container {
+            background-color: rgb(3, 7, 41);
+            color: goldenrod;
+            padding: 10px;
+            font-family: Tahoma,;
+            line-height: 9px;
+        }
+    </style>
+</head>
+<body>
+    NB: create a file "ass3.html" for this assignment and use link tag to attach your css file
+    <p style="color: red">1. Css Box Model: Padding, margin and Borders</p>
+    <p> Hints: <br> 
+        a. redesign the buttons  you see below:</p>
+        <div class="btns-container">
+            <button class="first-btn">Subscribe</button>
+            <button class="second-btn">Add to Cart</button>
+            <button class="on-btn">On</button>
+            <button class="off-btn">Off</button>
+            <button class="login-btn">Login</button>
+        </div>
+
+    <p style="color: red">2. Hovers, Transitions and shadows</p>
+    <p>Hints: <br>
+        a. Hover the buttons and look at the designs <br>
+        b. create a div tag and give a background-color <br>
+        c. create  four buttons inside the div to look like the buttons in the pics <br>
+        d. add padding inside the div to give space to the buttons <br>
+        NB. focus on the designs not on the layouts and positioning
+    </p>
+    <div class="second-btn-container">
+        <button  class="btn1">Hover me A</button>
+        <button class="btn2">Hover me B</button>
+        <button class="btn3">Hover me C</button>
+        <button class="btn4">Hover me D</button>
+    </div>
+
+    <p style="color: red">3. Intro To Web Dev: HTML, CSS and JS</p>
+    <p>Hints: <br>
+        a. add "onmousehover=name of function()" attribute to each of the buttons you created <br>
+        b. add a script tag to your ass3.html file <br>
+        c. in the script tag, create four different functions namely: hoverA, hoverB, hoverC and hoverD <br>
+        d. Inside each of the functions add an alert() <br>
+        e. Showing "you hovered buttonA", "you hovered buttonB", "you hovered buttonC", "you hovered buttonD" respectively <br>
+        f. for more clearity, see diagram below:
+    </p>
+
+    <div class="html-css-js-container">
+        <marquee behavior="scroll" direction="left">
+            <p style="color: greenyellow">Observe the diagram carefully, This helps to get the expected result</p>
+        </marquee>
+        <p>button onmousehover="hoverA()" <br>
+            button onmousehover="hoverB()" <br>
+            button onmousehover="hoverC()" <br>
+            button onmousehover="hoverD()" <br>
+
+            <p>
+                script <br>
+                let hoverA = function() { <br>
+                    alert("you hovered buttonA") <br>
+                } <br> <br>
+    
+                let hoverB = function() { <br>
+                    alert("you hovered buttonB") <br>
+                } <br> <br>
+                let hoverC = function() { <br>
+                    alert("you hovered buttonC") <br>
+                } <br> <br>
+                let hoverD = function() { <br>
+                    alert("you hovered buttonD") <br>
+                } <br> <br>
+                script
+            </p>
+        </p>
+    </div>
+    <a style="color: blue; font-size: 20px;" href="day two.html">Prev</a>
+    
+</body>
+</html>
